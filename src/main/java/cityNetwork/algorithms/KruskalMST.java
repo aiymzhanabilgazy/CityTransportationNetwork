@@ -34,7 +34,7 @@ public class KruskalMST {
         int xroot = find(parent, x);
         int yroot = find(parent, y);
 
-        if (rank[xroot] < rank[yroot]) { //add a smaller tree to a larger one
+        if (rank[xroot] < rank[yroot]) { // add a smaller tree to a larger one
             parent[xroot] = yroot;
         }else if(rank[xroot] > rank[yroot]){
             parent[yroot] = xroot;
