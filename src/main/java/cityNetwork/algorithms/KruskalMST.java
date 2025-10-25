@@ -18,8 +18,8 @@ public class KruskalMST {
         @Override
         public String toString() {
             return "MST cost = " + totalCost + "; vertices = " + vertexCount +
-                    "; edges = " + edgeCount + "; operations = " + operationsCount +
-                    "; time = " + executionTimeMs + " listOfEdges: " + edges;
+                    "; edges = " + edgeCount + "; operationsСount = " + operationsCount +
+                    "; executionTimeMs = " + executionTimeMs + " listOfEdges: " + edges;
         }
     }
 
@@ -67,8 +67,8 @@ public class KruskalMST {
 
         while (e <graph.vertices -1 && i < edges.size()) { //v-1 edges
             Edge nextEdge = edges.get(i++);
-            int x = find(parent,nextEdge.src);
-            int y = find(parent,nextEdge.dest);
+            int x = find(parent,nextEdge.from);
+            int y = find(parent,nextEdge.to);
             operations++;
 
             if(x != y){

@@ -1,13 +1,13 @@
 package cityNetwork.model;
 
 public class Edge implements Comparable<Edge> {
-    public int src;
-    public int dest;
+    public int from;
+    public int to;
     public int weight;
 
-    public Edge(int src, int dest, int weight) {
-        this.src = src;
-        this.dest = dest;
+    public Edge(int from, int to, int weight) {
+        this.from = from;
+        this.to = to;
         this.weight = weight;
     }
     @Override
@@ -16,7 +16,7 @@ public class Edge implements Comparable<Edge> {
     }
     @Override
     public String toString() {
-        return "Edge [src=" + src + ", dest=" + dest + ", weight=" + weight + "]";
+        return "Edge [from=" + from + ", to=" + to + ", weight=" + weight + "]";
     }
 
 }

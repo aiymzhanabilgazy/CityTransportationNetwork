@@ -11,8 +11,8 @@ public class Graph {
         this.vertices = vertices;
         this.edges = new ArrayList<>();
     }
-    public void addEdge(int src, int dest, int weight) {
-        edges.add(new Edge(src, dest, weight));
+    public void addEdge(int from, int to, int weight) {
+        edges.add(new Edge(from, to, weight));
 
     }
     public List<Edge> getEdges() {
