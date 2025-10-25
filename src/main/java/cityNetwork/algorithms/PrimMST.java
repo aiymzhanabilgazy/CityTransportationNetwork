@@ -14,7 +14,7 @@ public class PrimMST {
         public List<Edge> edges;
         public int totalCost;
         public long operationsCount;
-        public long executionTimeMs;
+        public double executionTimeMs;
         public int vertexCount;
         public int edgeCount;
 
@@ -27,7 +27,7 @@ public class PrimMST {
     }
 
     public Result findPrimMST(Graph graph) {
-        long startTime = System.currentTimeMillis();
+        long startTime = System.nanoTime();
 
         int vertices = graph.vertices;
         boolean[] visited = new boolean[vertices];
@@ -75,7 +75,7 @@ public class PrimMST {
         resultR.edges = mst;
         resultR.totalCost = totalCost;
         resultR.operationsCount = operations;
-        resultR.executionTimeMs = System.currentTimeMillis() - startTime;
+        resultR.executionTimeMs = (System.nanoTime() - startTime)/1_000_000.0;
         resultR.vertexCount = vertices;
         resultR.edgeCount = graph.getEdges().size();
 

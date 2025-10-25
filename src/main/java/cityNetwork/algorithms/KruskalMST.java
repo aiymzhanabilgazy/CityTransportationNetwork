@@ -11,14 +11,14 @@ public class KruskalMST {
         public List<Edge> edges;
         public int totalCost;
         public long operationsCount;
-        public long executionTimeMs;
+        public double executionTimeMs;
         public int vertexCount;
         public int edgeCount;
 
         @Override
         public String toString() {
             return "MST cost = " + totalCost + "; vertices = " + vertexCount +
-                    "; edges = " + edgeCount + "; operationsСount = " + operationsCount +
+                    "; edges = " + edgeCount + "; operationsCount = " + operationsCount +
                     "; executionTimeMs = " + executionTimeMs + "ms" + " listOfEdges: " + edges;
         }
     }
@@ -46,7 +46,7 @@ public class KruskalMST {
 
 
     public Result findKruskalMST(Graph graph) {
-        long startTime = System.currentTimeMillis();
+        long startTime = System.nanoTime();
 
         List<Edge> result = new ArrayList<>();
         int totalCost = 0;
@@ -83,7 +83,7 @@ public class KruskalMST {
         resultR.edges = result;
         resultR.totalCost = totalCost;
         resultR.operationsCount = operations;
-        resultR.executionTimeMs = System.currentTimeMillis() - startTime;
+        resultR.executionTimeMs = (System.nanoTime() - startTime)/ 1_000_000.0;
         resultR.vertexCount = graph.vertices;
         resultR.edgeCount = edges.size();
 
