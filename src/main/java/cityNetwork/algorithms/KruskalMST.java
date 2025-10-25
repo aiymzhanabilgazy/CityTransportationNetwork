@@ -19,7 +19,7 @@ public class KruskalMST {
         public String toString() {
             return "MST cost = " + totalCost + "; vertices = " + vertexCount +
                     "; edges = " + edgeCount + "; operationsСount = " + operationsCount +
-                    "; executionTimeMs = " + executionTimeMs + " listOfEdges: " + edges;
+                    "; executionTimeMs = " + executionTimeMs + "ms" + " listOfEdges: " + edges;
         }
     }
 

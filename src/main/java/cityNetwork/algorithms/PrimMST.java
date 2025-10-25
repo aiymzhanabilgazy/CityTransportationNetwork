@@ -22,7 +22,7 @@ public class PrimMST {
         public String toString() {
             return "MST cost = " + totalCost + "; vertices = " + vertexCount +
                     "; edges = " + edgeCount + "; operationsCount = " + operationsCount +
-                    "; executionTimeMs = " + executionTimeMs + " listOfEdges: " + edges;
+                    "; executionTimeMs = " + executionTimeMs +" ms" + " listOfEdges: " + edges;
         }
     }
 
