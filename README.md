@@ -152,8 +152,8 @@ Both Prim's and Kruskal's algorithms effectively enhanced the city's transportat
 Prim's and Kruskal's algorithms are both powerful tools for finding the MST of a graph, each with its unique advantages. Prim's algorithm is typically preferred for dense graphs, leveraging its efficient priority queue-based approach, while Kruskal's algorithm excels in handling sparse graphs with its edge-sorting and union-find techniques. Understanding the structural differences and appropriate use cases for each algorithm ensures optimal performance in various graph-related problems.
 
 ## References
-- Alsuwaiyel, M. H. (2016). *Algorithms: Design Techniques and Analysis (Lecture Notes Series on Computing, Vol. 14), 209-216.* [PDF] (https://github.com/aiymzhanabilgazy/ass3_daa/raw/main/algorithms-design-techniques-and-analysis%20(1).pdf).
+- Alsuwaiyel, M. H. (2016). *Algorithms: Design Techniques and Analysis (Lecture Notes Series on Computing, Vol. 14), 209-216.* algorithms-design-techniques-and-analysis.pdf
 
 - GeeksforGeeks. (2025, July 12). *Difference between Prim’s and Kruskal’s algorithm for MST.* https://www.geeksforgeeks.org/dsa/difference-between-prims-and-kruskals-algorithm-for-mst/
-- Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th edition),616-627*.[PDF](https://github.com/aiymzhanabilgazy/ass3_daa/raw/main/Robert_Sedgewick_and_Kevin_Wayne_Algorithms,_4th_edition_1.pdf).
+- Sedgewick, R., & Wayne, K. (2011). *Algorithms (4th edition),616-627*. Robert_Sedgewick_and_Kevin_Wayne_Algorithms,_4th_edition.pdf
 
