@@ -10,18 +10,24 @@ Also analyzing the efficiency of both algorithms and compare their performance.
 **Kruskal's Algorithm** - is a greedy algorithm but takes a different approach. It begins with all the vertices and no edges, and it adds edges one by one in increasing order of weight, ensuring no cycles are formed until the MST is complete.
 
 #### **Steps of Kruskal's Algorithm:**
-1.**Initialization:** Sort edges by weight in non-decreasing order.
-2.**Edge Selection:** Add the smallest edge to the MST if it does not create a cycle.
-3.**Cycle Detection:** Use a union-find data structure to detect and prevent cycles.
-4.**Repeat:** Continue adding edges until the MST contains exactly(v-1) edges.
+1. **Initialization:** Sort edges by weight in non-decreasing order.
+
+2. **Edge Selection:** Add the smallest edge to the MST if it does not create a cycle.
+
+3. **Cycle Detection:** Use a union-find data structure to detect and prevent cycles.
+
+4. **Repeat:** Continue adding edges until the MST contains exactly(v-1) edges.
 -------------------------------------------------------------------------------------------
 **Prim's Algorithm** -is also a greedy algorithm that builds the MST incrementally. It starts with a single vertex and grows the MST one edge at a time, always choosing the smallest edge that connects a vertex in the MST to a vertex outside the MST .
 
 #### **Steps of Prim's Algorithm:**
-1.**Initialization:** Start with an arbitrary vertex as part of the MST.
-2.**Edge Selection:** Choose the minimum weight edge connecting MST vertices to non-MST vertices.
-3.**Update:** Add the selected edge and new vertex to the MST.
-4.**Repeat:** Continue until all vertices are included in the MST.
+1. **Initialization:** Start with an arbitrary vertex as part of the MST.
+
+2. **Edge Selection:** Choose the minimum weight edge connecting MST vertices to non-MST vertices.
+
+3. **Update:** Add the selected edge and new vertex to the MST.
+
+4. **Repeat:** Continue until all vertices are included in the MST.
 
 ---------------------------------------------------------------------
 
